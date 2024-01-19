@@ -17,15 +17,8 @@ from YukkiMusic.core.call import Yukki
 from YukkiMusic.utils.database import set_loop
 from YukkiMusic.utils.decorators import AdminRightsCheck
 
-# Commands
-STOP_COMMAND = get_command("STOP_COMMAND")
-
-
 @app.on_message(
-    filters.command(STOP_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
+    filters.command(["end", "stop", "cend", "cstop"]) & filters.group & ~BANNED_USERS
 )
 @AdminRightsCheck
 async def stop_music(cli, message: Message, _, chat_id):
