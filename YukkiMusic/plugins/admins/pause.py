@@ -13,7 +13,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS
 from strings import get_command
 from YukkiMusic import app
-from YukkiMusic.core.call import Yukki
+from YukkiMusic.core.call import Anony
 from YukkiMusic.utils.database import is_music_playing, music_off
 from YukkiMusic.utils.decorators import AdminRightsCheck
 
