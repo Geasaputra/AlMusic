@@ -7,7 +7,7 @@
 #
 # All rights reserved.
 
-from config import LOG, LOG_GROUP_ID
+from config import LOGGER_ID
 from YukkiMusic import app
 from YukkiMusic.utils.database import is_on_off
 
