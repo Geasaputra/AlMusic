@@ -17,9 +17,9 @@ from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQuality
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from AnonXMusic import LOGGER, YouTube, app
-from AnonXMusic.misc import db
-from AnonXMusic.utils.database import (
+from YukkiMusic import LOGGER, YouTube, app
+from YukkiMusic.misc import db
+from YukkiMusic.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
